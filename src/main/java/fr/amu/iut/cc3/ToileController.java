@@ -17,9 +17,11 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 
 import java.net.URL;
+import java.security.cert.PolicyNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -45,6 +47,8 @@ public class ToileController {
     @FXML
     private TextField comp6;
 
+
+
     @FXML
     private void tracerButtonClicked() {
 
@@ -58,24 +62,35 @@ public class ToileController {
 
         double x1 = getXRadarChart(note1, 1);
         double y1 = getYRadarChart(note1, 1);
+        drawPoint(x1, y1);
 
         double x2 = getXRadarChart(note2, 2);
         double y2 = getYRadarChart(note2, 2);
+        drawPoint(x2, y2);
 
         double x3 = getXRadarChart(note3, 3);
         double y3 = getYRadarChart(note3, 3);
-
+        drawPoint(x3, y3);
         double x4 = getXRadarChart(note4, 4);
         double y4 = getYRadarChart(note4, 4);
-
+        drawPoint(x4, y4);
         double x5 = getXRadarChart(note5, 5);
         double y5 = getYRadarChart(note5, 5);
-
+        drawPoint(x5, y5);
         double x6 = getXRadarChart(note6, 6);
         double y6 = getYRadarChart(note6, 6);
-
+        drawPoint(x6, y6);
     }
 
+    private void drawPoint(double x, double y) {
+        Circle point = new Circle(x, y, 5);
+        point.getStyleClass().add("point");
+
+    }
+    @FXML
+    private void competenceTextFieldAction() {
+        tracerButtonClicked();
+    }
     @FXML
     private void viderButtonClicked() {
 
@@ -87,10 +102,7 @@ public class ToileController {
         comp6.clear();
     }
 
-    @FXML
-    private void competenceTextFieldAction() {
-        tracerButtonClicked();
-    }
+
 
     private double getXRadarChart(double value, int axe) {
         double maxNote = 20.0;

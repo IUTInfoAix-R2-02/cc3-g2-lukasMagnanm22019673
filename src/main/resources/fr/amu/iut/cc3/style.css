@@ -14,3 +14,7 @@ Line {
     -fx-stroke: "blue";
     -fx-stroke-width: 2;
 }
+.point {
+    -fx-fill: red;
+    -fx-stroke: black;
+}

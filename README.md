@@ -4,7 +4,7 @@
 **Évaluation individuelle sur machine en salle TP, et temps limité (4h).**  
 
 Les documents sont autorisés, tout comme les recherches sur le Web. Par contre, toute communication entre étudiants (quelle que soit la forme) est interdite, tout comme l’utilisation d‘outils de type ChatGPT. 
-
+Bonjour
 Cette évaluation contribue aux compétences :
 
   - Compétence 1 – "développer", AC11.02 "élaborer des conceptions simples et AC11.04 "développer des interfaces utilisateurs" -> coeff. 10
